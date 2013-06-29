@@ -1,0 +1,72 @@
+
+
+body{
+background:url("../images/background.png");
+background-repeat: repeat;
+margin: 0px;
+padding:0px;
+}
+
+.login
+{
+	border:1px #888888;
+	width:255px;
+	height:173px;
+	padding-top:200px;
+	margin:auto;
+	
+}
+
+.domain
+{
+	width:480px;
+	margin:auto;
+	padding-top: 50px;
+	
+}
+
+
+div.bar
+{
+	width:100%;
+	border: 1px solid gray;
+}
+
+div.bar >table
+{
+	width: 100%;
+	display: table-cell;
+}
+
+
+div.bar >table>tbody>tr>td
+{
+	
+	width: 50%;	
+	text-align:center;
+	vertical-align: middle;
+}
+
+
+.op
+{
+	width:100%;
+	border: 1px solid gray;
+	
+}
+
+div.op >table
+{
+	width: 100%;
+	text-align:center;
+}
+
+div.op>table>tbody>tr>th
+{
+	width: 50%;
+}
+
+div.op>table>tbody>tr>td
+{
+	width: 25%;
+}

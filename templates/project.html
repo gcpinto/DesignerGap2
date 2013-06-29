@@ -1,0 +1,85 @@
+<div id="project{id}" class="clear pt80">
+    <div id="smallView_{id}" class="itemProject">
+        <div id="titleProject" class="pA z3 mtm30 mlm20">
+            <div class="fl"><img src="images/rect56_blue1_left.png" /></div>
+            <div class="fl rect56Blue1 p10 pt15 white20 quicksand">{name}</div>
+            <div class="fl"><img src="images/rect56_blue1_right.png" /></div>
+        </div>
+        <div id="clientName" class="pA z2 mt15 mlm20">
+            <div class="fl"><img src="images/rect56_blue2_left.png" /></div>
+            <div class="fl rect56Blue2 p10 pt20 white16 quicksand">{client}</div>
+            <div class="fl"><img src="images/rect56_blue2_right.png" /></div>
+        </div>
+        <div id="social" class="pA z4 mt80 ml20">
+            <div class="addthis_toolbox atfixed"                
+                addthis:url="{url}"
+                addthis:title="Check out this project [ {name} - {url} ]"
+                addthis:description="Check out this project [ {name} - {url} ]">            
+                <div class="custom_images">                    
+                    <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                    <a class="addthis_button_tweet" tw:via="loadinteractive" tw:count="none"></a>
+                    <a class="addthis_button_google_plusone" g:plusone:size="medium" g:plusone:count="false"></a>
+                    <a href="{url}" class="addthis_button_compact"></a>
+                </div>
+            </div>
+        </div>
+        <div id="viewProject" class="pA z2 ml828 mt370" onclick="OpenProject({id});">
+            <div class="fl"><img src="images/rect40_red_left.png" /></div>
+            <div class="fl rect40Red p10 white14 quicksand">
+                 <ul>
+                    <li><img src="images/plus_white.png" /></li>
+                    <li class="ml10 mt2"><span class="quicksand white14">{view}</span></li>
+                </ul> 
+            </div>
+            <div class="fl"><img src="images/rect40_red_right.png" /></div>
+        </div>
+        <div id="imgItemProject" class="z1 cPointer" onclick="OpenProject({id});">
+            <img src="{tb}" alt="Load Interactive - Project [ {name} ]" />
+        </div>
+    </div>
+    <div id="fullView_{id}" class="w100 workDetail">    
+        <div id="divBg">            
+            <div class="pA mtm30" style="width:985px;">
+                <div id="titleProject" class="pA z3 mlm20">
+                    <div class="fl"><img src="images/rect56_blue1_left.png" /></div>
+                    <div class="fl rect56Blue1 p10 pt15 white20 quicksand">{name}</div>
+                    <div class="fl"><img src="images/rect56_blue1_right.png" /></div>
+                </div>
+                <div id="clientName" class="pA z2 mt45 mlm20">
+                    <div class="fl"><img src="images/rect56_blue2_left.png" /></div>
+                    <div class="fl rect56Blue2 p10 pt20 white16 quicksand">{client}</div>
+                    <div class="fl"><img src="images/rect56_blue2_right.png" /></div>
+                </div>
+                <div id="social" class="pA z4 mt110 ml20">
+                    <div class="addthis_toolbox atfixed"                
+                    addthis:url="{url}"
+                    addthis:title="Check out this project [ {name} - {url} ]"
+                    addthis:description="Check out this project [ {name} - {url} ]">            
+                        <div class="custom_images">
+                            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                            <a class="addthis_button_tweet" tw:via="loadinteractive" tw:count="none"></a>
+                            <a class="addthis_button_google_plusone" g:plusone:size="medium" g:plusone:count="false"></a>
+                            <a href="{url}" class="addthis_button_compact"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="closeProject" class="pA z2 mt10 mrm20 r0" onclick="CloseProject({id});">
+                    <div class="fl"><img src="images/rect40_red_left.png" /></div>
+                    <div class="fl rect40Red p10 white14 quicksand">
+                         <ul>
+                            <li><img src="images/close_white.png" /></li>
+                            <li class="ml10 mt2"><span class="quicksand white14">{close}</span></li>
+                        </ul> 
+                    </div>
+                    <div class="fl"><img src="images/rect40_red_right.png" /></div>
+                </div>        
+            </div>
+        </div>
+        <div class="mt40 z1 pR">
+            <center>
+            {slide}            
+            <div style="width:985px;" class="clear mt40 left"><span class="gray14">{detail}</span></div><br /><br /><br /><br /><br /><br /><br /><br /></center>
+            <!--<div id="detailProject">{detail}</div>-->                
+        </div>
+    </div>
+</div>
